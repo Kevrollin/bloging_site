@@ -68,10 +68,10 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-16 items-center justify-between mx-auto">
           <div className="flex items-center gap-6 md:gap-10">
             <Link href="/" className="font-bold text-xl">
-              BlogHub
+              Security.Plus
             </Link>
             <nav className="hidden md:flex gap-6">
               <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
@@ -103,7 +103,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
         </div>
       </header>
       <main className="flex-1">
-        <article className="container max-w-3xl py-12 md:py-20">
+        <article className="container max-w-3xl py-12 md:py-20 mx-auto">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Link
@@ -150,9 +150,9 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
         </article>
       </main>
       <footer className="w-full border-t py-6">
-        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row mx-auto">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © 2025 BlogHub. All rights reserved.
+            © 2025 Security.Plus. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="/terms" className="text-sm text-muted-foreground hover:underline">

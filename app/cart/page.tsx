@@ -1,7 +1,7 @@
 import CartClientPage from "./CartClientPage"
 
 export const metadata = {
-  title: "Shopping Cart | BlogHub",
+  title: "Shopping Cart | SecurityPlus",
   description: "View and manage items in your shopping cart",
 }
 

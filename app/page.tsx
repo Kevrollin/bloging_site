@@ -1,13 +1,13 @@
 "use client"
-import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { FeaturedPosts } from "@/components/featured-posts"
-import { ModeToggle } from "@/components/mode-toggle"
 import { CartButton } from "@/components/cart-button"
 import { useCart } from "@/components/cart-provider"
+import { FeaturedPosts } from "@/components/featured-posts"
+import { ModeToggle } from "@/components/mode-toggle"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function Home() {
   const { addItem } = useCart()
@@ -53,12 +53,12 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen w-full">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-16 items-center justify-between mx-auto">
           <div className="flex items-center gap-6 md:gap-10">
             <Link href="/" className="font-bold text-xl">
-              BlogHub
+              Security.Plus
             </Link>
             <nav className="hidden md:flex gap-6">
               <Link href="/" className="text-sm font-medium text-primary">
@@ -90,10 +90,10 @@ export default function Home() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
-              <div className="flex flex-col justify-center space-y-4">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        <div className="container px-4 md:px-6 mx-auto">
+          <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2 items-center">
+            <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                     Discover, Learn, and Share
@@ -116,7 +116,7 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="hidden md:block">
+              <div className="hidden md:flex items-center justify-center">
                 <img
                   src="/placeholder.svg?height=550&width=550"
                   width={550}
@@ -129,7 +129,7 @@ export default function Home() {
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Featured Articles</h2>
@@ -150,7 +150,7 @@ export default function Home() {
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Marketplace Highlights</h2>
@@ -223,9 +223,9 @@ export default function Home() {
         </section>
       </main>
       <footer className="w-full border-t py-6">
-        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row mx-auto">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © 2025 BlogHub. All rights reserved.
+            © 2025 Security.Plus. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="/terms" className="text-sm text-muted-foreground hover:underline">

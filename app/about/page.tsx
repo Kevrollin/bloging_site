@@ -1,11 +1,11 @@
 import Link from "next/link"
 
-import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
 
 export const metadata = {
-  title: "About Us | BlogHub",
-  description: "Learn more about BlogHub, our mission, and our team",
+  title: "About Us | SecurityPlus",
+  description: "Learn more about SecurityPlus, our mission, and our team",
 }
 
 export default function AboutPage() {
@@ -13,9 +13,9 @@ export default function AboutPage() {
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-6 md:gap-10">
+          <div className="flex items-center gap-6 md:gap-10 mx-auto">
             <Link href="/" className="font-bold text-xl">
-              BlogHub
+            Security.Plus
             </Link>
             <nav className="hidden md:flex gap-6">
               <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
@@ -46,11 +46,11 @@ export default function AboutPage() {
       </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 mx-auto">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">About BlogHub</h1>
+                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Security.Plus</h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
                     We're on a mission to create a platform where knowledge is shared, ideas are explored, and
                     communities thrive.
@@ -62,7 +62,7 @@ export default function AboutPage() {
                   src="/placeholder.svg?height=400&width=600&text=Our Story"
                   width={600}
                   height={400}
-                  alt="About BlogHub"
+                  alt="About Security.Plus"
                   className="aspect-video overflow-hidden rounded-xl object-cover"
                 />
               </div>
@@ -70,12 +70,12 @@ export default function AboutPage() {
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Our Mission</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  At BlogHub, we believe in the power of knowledge sharing and community building. Our platform is
+                  At Security.Plus, we believe in the power of knowledge sharing and community building. Our platform is
                   designed to connect writers, readers, and creators in a space where ideas can flourish and meaningful
                   connections can be made.
                 </p>
@@ -159,12 +159,12 @@ export default function AboutPage() {
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Meet Our Team</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  The passionate individuals behind BlogHub who are dedicated to creating the best platform for content
+                  The passionate individuals behind Security.Plus who are dedicated to creating the best platform for content
                   creators and readers.
                 </p>
               </div>
@@ -174,7 +174,7 @@ export default function AboutPage() {
                 {
                   name: "Sarah Johnson",
                   role: "Founder & CEO",
-                  bio: "With over 15 years of experience in digital publishing, Sarah founded BlogHub to empower writers and content creators.",
+                  bio: "With over 15 years of experience in digital publishing, Sarah founded Security.Plus to empower writers and content creators.",
                   avatar: "/placeholder.svg?height=150&width=150&text=SJ",
                   initials: "SJ",
                 },
@@ -188,7 +188,7 @@ export default function AboutPage() {
                 {
                   name: "Emily Rodriguez",
                   role: "Head of Content",
-                  bio: "Former editor at a major publication, Emily ensures that BlogHub maintains the highest content standards.",
+                  bio: "Former editor at a major publication, Emily ensures that Security.Plus maintains the highest content standards.",
                   avatar: "/placeholder.svg?height=150&width=150&text=ER",
                   initials: "ER",
                 },
@@ -209,7 +209,7 @@ export default function AboutPage() {
                 {
                   name: "James Taylor",
                   role: "Community Manager",
-                  bio: "Dedicated to fostering meaningful connections between writers and readers within the BlogHub community.",
+                  bio: "Dedicated to fostering meaningful connections between writers and readers within the Security.Plus community.",
                   avatar: "/placeholder.svg?height=150&width=150&text=JT",
                   initials: "JT",
                 },
@@ -230,12 +230,12 @@ export default function AboutPage() {
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Join Our Community</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Become a part of BlogHub and start sharing your knowledge, connecting with like-minded individuals,
+                  Become a part of Security.Plus and start sharing your knowledge, connecting with like-minded individuals,
                   and discovering valuable content.
                 </p>
               </div>
@@ -256,9 +256,9 @@ export default function AboutPage() {
         </section>
       </main>
       <footer className="w-full border-t py-6">
-        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row mx-auto">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © 2025 BlogHub. All rights reserved.
+            © 2025 Security.Plus. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="/terms" className="text-sm text-muted-foreground hover:underline">

@@ -7,8 +7,8 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Separator } from "@/components/ui/separator"
 
 export const metadata = {
-  title: "Login | BlogHub",
-  description: "Login to your BlogHub account",
+  title: "Login | SecurityPlus",
+  description: "Login to your SecurityPlus account",
 }
 
 export default function LoginPage() {
@@ -16,7 +16,7 @@ export default function LoginPage() {
     <div className="flex min-h-screen">
       <div className="flex flex-col justify-center w-full max-w-md p-8 mx-auto">
         <div className="flex flex-col space-y-2 text-center mb-8">
-          <h1 className="text-2xl font-semibold tracking-tight">Login to BlogHub</h1>
+          <h1 className="text-2xl font-semibold tracking-tight">Login to SecurityPlus</h1>
           <p className="text-sm text-muted-foreground">Enter your email and password to access your account</p>
         </div>
         <div className="grid gap-6">

@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 
 export const metadata = {
-  title: "Terms of Service | BlogHub",
-  description: "Terms and conditions for using the BlogHub platform",
+  title: "Terms of Service | SecurityPlus",
+  description: "Terms and conditions for using the SecurityPlus platform",
 }
 
 export default function TermsPage() {
@@ -13,9 +13,9 @@ export default function TermsPage() {
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-6 md:gap-10">
+          <div className="flex items-center gap-6 md:gap-10 mx-auto">
             <Link href="/" className="font-bold text-xl">
-              BlogHub
+              Security.Plus
             </Link>
             <nav className="hidden md:flex gap-6">
               <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
@@ -45,7 +45,7 @@ export default function TermsPage() {
         </div>
       </header>
       <main className="flex-1">
-        <div className="container max-w-3xl py-12 md:py-20">
+        <div className="container max-w-3xl py-12 md:py-20 mx-auto">
           <div className="space-y-4">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Terms of Service</h1>
             <p className="text-muted-foreground">Last updated: April 7, 2025</p>
@@ -54,14 +54,14 @@ export default function TermsPage() {
           <div className="prose prose-gray dark:prose-invert max-w-none">
             <h2>1. Introduction</h2>
             <p>
-              Welcome to BlogHub. These Terms of Service govern your use of our website, services, and products. By
-              accessing or using BlogHub, you agree to be bound by these Terms. If you disagree with any part of the
+              Welcome to Security.Plus. These Terms of Service govern your use of our website, services, and products. By
+              accessing or using Security.Plus, you agree to be bound by these Terms. If you disagree with any part of the
               terms, you may not access the service.
             </p>
 
             <h2>2. Definitions</h2>
             <p>
-              <strong>Service</strong> refers to the BlogHub website and platform operated by BlogHub Inc.
+              <strong>Service</strong> refers to the Security.Plus website and platform operated by Security.Plus Inc.
               <br />
               <strong>User</strong> refers to individuals who access or use the Service.
               <br />
@@ -98,23 +98,23 @@ export default function TermsPage() {
             <h2>5. Intellectual Property</h2>
             <p>
               The Service and its original content (excluding Content provided by users), features, and functionality
-              are and will remain the exclusive property of BlogHub Inc. and its licensors. The Service is protected by
+              are and will remain the exclusive property of Security.Plus Inc. and its licensors. The Service is protected by
               copyright, trademark, and other laws of both the United States and foreign countries.
             </p>
             <p>
               Our trademarks and trade dress may not be used in connection with any product or service without the prior
-              written consent of BlogHub Inc.
+              written consent of Security.Plus Inc.
             </p>
 
             <h2>6. Marketplace</h2>
             <p>
-              BlogHub provides a marketplace where users can buy and sell digital products. By listing a product for
+              Security.Plus provides a marketplace where users can buy and sell digital products. By listing a product for
               sale, you represent and warrant that you have the right to sell the product and that the product does not
               infringe on any third party's intellectual property rights.
             </p>
             <p>
               As a buyer, you agree to pay for products you purchase and to comply with the terms of sale for each
-              product. BlogHub is not responsible for the quality, safety, legality, or any other aspect of the products
+              product. Security.Plus is not responsible for the quality, safety, legality, or any other aspect of the products
               sold on the marketplace.
             </p>
 
@@ -131,7 +131,7 @@ export default function TermsPage() {
 
             <h2>8. Limitation of Liability</h2>
             <p>
-              In no event shall BlogHub Inc., nor its directors, employees, partners, agents, suppliers, or affiliates,
+              In no event shall Security.Plus Inc., nor its directors, employees, partners, agents, suppliers, or affiliates,
               be liable for any indirect, incidental, special, consequential or punitive damages, including without
               limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your
               access to or use of or inability to access or use the Service; (ii) any conduct or content of any third
@@ -155,15 +155,15 @@ export default function TermsPage() {
             <h2>10. Contact Us</h2>
             <p>
               If you have any questions about these Terms, please contact us at{" "}
-              <a href="mailto:support@bloghub.com">support@bloghub.com</a>.
+              <a href="mailto:support@Security.Plus.com">support@Security.Plus.com</a>.
             </p>
           </div>
         </div>
       </main>
       <footer className="w-full border-t py-6">
-        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row mx-auto">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © 2025 BlogHub. All rights reserved.
+            © 2025 Security.Plus. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="/terms" className="text-sm text-primary hover:underline">

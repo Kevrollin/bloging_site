@@ -1,15 +1,15 @@
 "use client"
 
-import { useState } from "react"
-import Link from "next/link"
 import { ArrowLeft, Check, Heart, ShoppingCart, Star } from "lucide-react"
+import Link from "next/link"
+import { useState } from "react"
 
+import { CartButton } from "@/components/cart-button"
+import { useCart } from "@/components/cart-provider"
+import { ModeToggle } from "@/components/mode-toggle"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ModeToggle } from "@/components/mode-toggle"
-import { CartButton } from "@/components/cart-button"
-import { useCart } from "@/components/cart-provider"
 
 export default function ProductPage({ params }: { params: { id: string } }) {
   const [quantity, setQuantity] = useState(1)
@@ -119,10 +119,10 @@ export default function ProductPage({ params }: { params: { id: string } }) {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-16 items-center justify-between mx-auto">
           <div className="flex items-center gap-6 md:gap-10">
             <Link href="/" className="font-bold text-xl">
-              BlogHub
+              Security.Plus
             </Link>
             <nav className="hidden md:flex gap-6">
               <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
@@ -154,7 +154,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
         </div>
       </header>
       <main className="flex-1">
-        <div className="container py-8 md:py-12">
+        <div className="container py-8 md:py-12 mx-auto">
           <div className="mb-6">
             <Link href="/marketplace" className="flex items-center text-sm text-muted-foreground hover:text-foreground">
               <ArrowLeft className="mr-2 h-4 w-4" />
@@ -449,9 +449,9 @@ export default function ProductPage({ params }: { params: { id: string } }) {
         </div>
       </main>
       <footer className="w-full border-t py-6">
-        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row mx-auto">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © 2025 BlogHub. All rights reserved.
+            © 2025 Security.Plus. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="/terms" className="text-sm text-muted-foreground hover:underline">

@@ -1,14 +1,14 @@
 import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
+import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Checkbox } from "@/components/ui/checkbox"
 import { Separator } from "@/components/ui/separator"
 
 export const metadata = {
-  title: "Sign Up | BlogHub",
-  description: "Create a new BlogHub account",
+  title: "Sign Up | SecurityPlus",
+  description: "Create a new SecurityPlus account",
 }
 
 export default function SignUpPage() {
@@ -17,7 +17,7 @@ export default function SignUpPage() {
       <div className="flex flex-col justify-center w-full max-w-md p-8 mx-auto">
         <div className="flex flex-col space-y-2 text-center mb-8">
           <h1 className="text-2xl font-semibold tracking-tight">Create an account</h1>
-          <p className="text-sm text-muted-foreground">Enter your information to create a BlogHub account</p>
+          <p className="text-sm text-muted-foreground">Enter your information to create a Security.Plus account</p>
         </div>
         <div className="grid gap-6">
           <form>
