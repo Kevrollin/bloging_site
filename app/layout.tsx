@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://bloghub.example.com",
+    url: "https://cybersecuritynews.pro",
     title: "BlogHub - Discover, Learn, and Share",
     description: "A comprehensive blog platform with user profiles, article management, and marketplace features.",
     siteName: "BlogHub",
@@ -62,7 +62,7 @@ export default function RootLayout({
   {/* Open Graph */}
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:url" content="https://bloghub.example.com" />
+  <meta property="og:url" content="https://cybersecuritynews.pro" />
   <meta property="og:title" content="BlogHub - Discover, Learn, and Share" />
   <meta property="og:description" content="A comprehensive blog platform with user profiles, article management, and marketplace features." />
   <meta property="og:site_name" content="BlogHub" />
