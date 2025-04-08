@@ -170,7 +170,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
     </div>
   )
 }
-;("use client")
+
 
 import { useState } from "react"
 
